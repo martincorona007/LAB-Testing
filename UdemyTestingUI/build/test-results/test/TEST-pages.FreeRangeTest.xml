@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pages.FreeRangeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-27T22:05:16.479Z" hostname="ALIEN-WARE" time="2.744">
+  <properties/>
+  <testcase name="nevegamosAFreeRangeTesters" classname="pages.FreeRangeTest" time="2.744"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jun 27, 2025 5:05:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+</testsuite>
