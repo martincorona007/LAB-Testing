@@ -67,5 +67,7 @@ tasks.named('check') {
 tasks.named('test') {
     // Use JUnit Jupiter for unit tests.
     //useJUnitPlatform()
-    useTestNG()
+   // useTestNG()
+    systemProperty "cucumber.options",
+    System.getProperty("cucumber.options")
 }

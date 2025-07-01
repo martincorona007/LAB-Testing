@@ -6,4 +6,4 @@
  */
 
 rootProject.name = 'SeleniumTesting'
-include('plugin')
+//include('plugin')
