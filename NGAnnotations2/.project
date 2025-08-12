@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>NGAnnotations2</name>
+	<name>NGAnnotations2-ecli</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -22,7 +22,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1750876832016</id>
+			<id>0</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
