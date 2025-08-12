@@ -1,3 +1,6 @@
+run the program
+gradle test
+
 Adding .feature
 
 tasks.named('test') {
