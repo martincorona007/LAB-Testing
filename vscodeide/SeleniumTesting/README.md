@@ -1,5 +1,9 @@
-run the program
-gradle test
+
+gradle test //run the program 
+gradle clean test //cache issues
+gradle test --rerun-tasks //nothing changes want to see results
+gradle test --test "mytest" // working on a specific feature
+
 
 Adding .feature
 

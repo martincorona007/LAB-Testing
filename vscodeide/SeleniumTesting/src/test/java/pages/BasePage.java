@@ -2,8 +2,11 @@ package pages;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 //import com.fasterxml.jackson.databind.JsonSerializable.Base;
@@ -36,5 +39,21 @@ public class BasePage {
   }
   public static void navigateTo(String url){
     driver.get(url);
+  }
+  //cerrar la instancia del driver. 
+  public static void closeBrowser(){
+    driver.quit();
+  }
+  // Encuentra y devuelve un WebElement en la página utilizando un locator XPath,
+    // esperando a que esté presentente en el DOM
+  private WebElement Find(String locator){
+    return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
+  }
+  public void clickElement(String locator){
+    Find(locator).click();
+  }
+  public void write(String locator,String keysToSend){
+    Find(locator).clear();
+    Find(locator).sendKeys(keysToSend);
   }
 }

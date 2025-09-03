@@ -8,6 +8,6 @@ public class FreeRangeSteps {
     PaginaPrincipal landingPage = new PaginaPrincipal();
     @Given("I navigate to www.freerangetesters.com")
     public void iNavigatetoFRT(){
-        landingPage.navigateToYoutube();
+        landingPage.navigateToFreeRangeTesters();
     }
 }
