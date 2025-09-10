@@ -1,12 +1,14 @@
 package pages;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 //import com.fasterxml.jackson.databind.JsonSerializable.Base;
@@ -55,5 +57,18 @@ public class BasePage {
   public void write(String locator,String keysToSend){
     Find(locator).clear();
     Find(locator).sendKeys(keysToSend);
+  }
+  public void selectFromDropDownByValue(String locator,String value){
+    Select dropdown = new Select(Find(locator));
+    dropdown.selectByValue(value);
+  }
+  public void selectFromDropDownByIndex(String locator,Integer index){
+    Select dropdown = new Select(Find(locator));
+    dropdown.selectByIndex(index);
+  }
+  public int dropDownSize(String locator){
+    Select dropdwn = new Select(Find(locator));
+    List<WebElement> dropDownsOptions = dropdwn.getOptions();
+    return dropDownsOptions.size();
   }
 }
