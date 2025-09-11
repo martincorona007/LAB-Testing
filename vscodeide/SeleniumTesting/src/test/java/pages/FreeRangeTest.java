@@ -1,15 +1,19 @@
 package pages;
 
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
 
 public class FreeRangeTest{
-  
   // PaginaPrincipal landingPage = new PaginaPrincipal();
   
   // @Given("I navigate to www.freerangetesters.com")
   // public void iNavigatetoFRT(){
   //   landingPage.navigateToFreeRangeTesters();
   // }
-
+  // @When("I go to {word} using the navigation bar")
+  // public void navigationBarUse(String section){
+  //   landingPage.clickOnSectionNavigationBar(section);
+  // }
 }
 
 //CLASS TEST

@@ -34,6 +34,8 @@ public class BasePage {
   static{
     WebDriverManager.chromedriver().setup();
     driver = new ChromeDriver();
+    System.out.println("=>>>>>>>Step Definition Class Loaded!");
+
   }
   
   public BasePage(WebDriver driver){
@@ -49,7 +51,7 @@ public class BasePage {
   // Encuentra y devuelve un WebElement en la página utilizando un locator XPath,
     // esperando a que esté presentente en el DOM
   private WebElement Find(String locator){
-    return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
+    return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
   }
   public void clickElement(String locator){
     Find(locator).click();
